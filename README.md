@@ -1,6 +1,6 @@
 # Template for the Sphinx Tutorial
 
-This repository serves as a log of my experience in following the tutorial ["Tutorial: Build your first project"](https://www.sphinx-doc.org/en/master/tutorial/index.html) from [Sphinx](https://www.sphinx-doc.org/en/master/index.html). The purpose is to summarize all the steps I took and the further tasks I carried out along the way, in order to provide the community with a complete tutorial-based template, as well as a useful starting point for deploying their own projects.
+This repository serves as a log of my experience in following the tutorial ["Tutorial: Build your first project"](https://www.sphinx-doc.org/en/master/tutorial/index.html) from [Sphinx](https://www.sphinx-doc.org/en/master/index.html). The purpose is to summarize all the steps I took and the further tasks carried out along the way. The main goal is to provide the community with a complete tutorial-based template, as well as a useful starting point for deploying their own projects. See the documentation web page obtained [here](https://olcruzgonzalez.github.io/).
 
 Please, click on [Template](https://github.com/olcruzgonzalez/tutorial-template-sphinx/generate) for getting start.
 
@@ -119,9 +119,10 @@ or
 
 10. Deploying on GitHub pages
 
+
 ### Deployment 
 
-When following the instructions in the tutorial, keep in mind that,
+When following the instructions in the tutorial, [Appendix: Deploying a Sphinx project online](https://www.sphinx-doc.org/en/master/tutorial/deploying.html), do as below:
 
 * Use the command
 ```
