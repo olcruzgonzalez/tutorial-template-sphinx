@@ -1,6 +1,6 @@
 # Template for the Sphinx Tutorial
 
-This repository serves as a log of my experience in following the tutorial ["Tutorial: Build your first project"](https://www.sphinx-doc.org/en/master/tutorial/index.html) from [Sphinx](https://www.sphinx-doc.org/en/master/index.html). The purpose is to summarize all the steps I took and the further tasks carried out along the way. The main goal is to provide the community with a complete tutorial-based template, as well as a useful starting point for deploying their own projects. See the documentation web page obtained [here](https://olcruzgonzalez.github.io/tutorial-template-sphinx/).
+This repository serves as a log of my experience in following the tutorial ["Tutorial: Build your first project"](https://www.sphinx-doc.org/en/master/tutorial/index.html) from [Sphinx](https://www.sphinx-doc.org/en/master/index.html). The purpose is to summarize all the steps I took and the further tasks carried out along the way. The main goal is to provide the community with a complete tutorial-based template, as well as a useful starting point for deploying their own projects. To access the static documentation web page resulting from this tutorial, click  [here](https://olcruzgonzalez.github.io/tutorial-template-sphinx/).
 
 Please, click on [Template](https://github.com/olcruzgonzalez/tutorial-template-sphinx/generate) for getting start and remember to update your `Personal access tokens`  within the file `sphinx.yml` (see **Deployment** section below).
 
@@ -60,8 +60,7 @@ However, if you decide to go through the tutorial **from scratch**, these are so
 git clone https://github.com/username/RepositoryName.git
 cd RepositoryName
 ```
-
-3. Now, add the Python library for which you intend to create the documentation and update the README file.  
+3. Now, add the Python scripts for which you intend to create the documentation, for instance `lumanche.py`, and update the README file. 
 
 4. Create and activate a virtual environment
 
