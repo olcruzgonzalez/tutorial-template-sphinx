@@ -123,17 +123,14 @@ or
 
 When following the instructions in the tutorial, [Appendix: Deploying a Sphinx project online](https://www.sphinx-doc.org/en/master/tutorial/deploying.html), do as below:
 
-* Use the command
+* Use the command `freeze` and then update `requirements.txt` with all the modulus installed in your virtual environment.
 ```
 pip freeze
 ```
-and then update `requirements.txt` with all the modulus installed in your virtual environment.
 
 * Before doing the push to the GitHub repository delete `docs/build` directory.
 
-* Within the file `sphinx.yml`, update the information of your GitHub token.
-
-   You must grant write access to the repository for Actions by using an access token (PAT). To do this, follow these steps:
+* Within the file `sphinx.yml`, update the information of your GitHub token. You must grant write access to the repository for Actions by using an access token (PAT). To do this, follow the steps:
     
     *  In GitHub, go to your profile settings and click on `Developer settings`.
 
@@ -141,7 +138,7 @@ and then update `requirements.txt` with all the modulus installed in your virtua
 
     * Give the token a descriptive name and select the "repo" scope (`workflow`).
 
-    * Store the token securely in your repository as a secret. That involves the following steps:
+    * Store the token securely in your repository as a secret. That is:
         - Go to your GitHub repository where you are deploying your Sphinx project.
         - In the upper-right corner of the page, click on the `Settings` tab.
         - In the left sidebar, click on `Secrets and variables` and then `Actions`.
@@ -181,6 +178,8 @@ and then update `requirements.txt` with all the modulus installed in your virtua
 ## License
 
 The template is available as open source under the terms of the [MIT License](https://github.com/olcruzgonzalez/tutorial-template-sphinx/blob/main/LICENSE).
+
+Please, feel free to [contact me](https://github.com/olcruzgonzalez) for any further information. I hope you find the repository useful.  
 
 
 
