@@ -60,7 +60,7 @@ However, if you decide to go through the tutorial **from scratch**, these are so
 git clone https://github.com/username/RepositoryName.git
 cd RepositoryName
 ```
-3. Now, add the Python scripts for which you intend to create the documentation, for instance `lumanche.py`, and update the README file. 
+3. Now, add the Python scripts for which you intend to create the documentation, for instance `lumanche.py`. Also, update the README file and it is highly recommended to add a [.gitignore](https://www.toptal.com/developers/gitignore?templates=python) file. 
 
 4. Create and activate a virtual environment
 
