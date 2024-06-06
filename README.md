@@ -65,7 +65,7 @@ cd RepositoryName
 4. Create and activate a virtual environment
 
 ```
-python -m venv venv
+python -m venv myenv
 ```
 * On Linux/macOS:
  
@@ -75,24 +75,24 @@ python -m venv venv
 * On Windows: 
 
     ```
-    myenv\Scripts\Activate.ps1
+    myenv/Scripts/Activate.ps1
     ```
 
 5. Install Sphinx
 ```
-(venv) pip install sphinx 
+(myenv) pip install sphinx 
 ```
 	
 6. Creating the documentation layout 
 	
 ```
-(venv) sphinx-quickstart docs
-(venv) sphinx-build -b html docs/source/ docs/build/html
+(myenv) sphinx-quickstart docs
+(myenv) sphinx-build -b html docs/source/ docs/build/html
 ```
 
 7. Perform any changes or customizations, see ["Tutorial: Build your first project"](https://www.sphinx-doc.org/en/master/tutorial/index.html) for more details. As an example, try a new theme, [furo](https://github.com/pradyunsg/furo):
 ```
-(venv) pip install furo
+(myenv) pip install furo
 ```
 
 docs/source/conf.py
@@ -101,19 +101,26 @@ docs/source/conf.py
 
 8. Update the changes
 ```
-(venv) sphinx-build -b html docs/source/ docs/build/html
+(myenv) sphinx-build -b html docs/source/ docs/build/html
 ```
 or 
 ```
-(venv) cd docs
-(venv) make html
+(myenv) cd docs
+(myenv) make html
 ```
 
 9. Commit and push to the remote repository
+
+* Use the command `freeze` and then update `requirements.txt` with all the modulus installed in your virtual environment.
 ```
-(venv) git add .
-(venv) git commit -m "commit message"
-(venv) git push origin local_branch_name
+(myenv) pip freeze > requirements.txt
+```
+
+* Before doing the push to the GitHub repository delete `docs/build` directory.
+```
+(myenv) git add .
+(myenv) git commit -m "commit message"
+(myenv) git push origin local_branch_name
 ```
 
 10. Deploying on GitHub pages
@@ -122,13 +129,6 @@ or
 ### Deployment 
 
 When following the instructions in the tutorial, [Appendix: Deploying a Sphinx project online](https://www.sphinx-doc.org/en/master/tutorial/deploying.html), do as below:
-
-* Use the command `freeze` and then update `requirements.txt` with all the modulus installed in your virtual environment.
-```
-pip freeze
-```
-
-* Before doing the push to the GitHub repository delete `docs/build` directory.
 
 * Within the file `sphinx.yml`, update the information of your GitHub token. You must grant write access to the repository for Actions by using an access token (PAT). To do this, follow the steps:
     
